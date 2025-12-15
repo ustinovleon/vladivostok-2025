@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Материалы презентации | Владивосток 18.12.2025</title>
+    <meta name="description" content="Материалы презентации недвижимости Пхукета — Владивосток, 18 декабря 2025">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #FAFAFA;
+            --color-surface: #FFFFFF;
+            --color-primary: #1E3A5F;
+            --color-primary-light: #2D5A8A;
+            --color-accent: #0D9488;
+            --color-text: #1A1A1A;
+            --color-text-muted: #6B7280;
+            --color-border: #E5E7EB;
+            --color-border-light: #F3F4F6;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+            --shadow-lg: 0 8px 24px rgba(0,0,0,0.08);
+            --transition: 0.2s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: white;
+            padding: 48px 20px 56px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero-logo {
+            width: 180px;
+            height: auto;
+            margin-bottom: 24px;
+            border-radius: var(--radius-sm);
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            letter-spacing: 0.02em;
+        }
+
+        .hero-badge svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 6vw, 36px);
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 16px;
+            opacity: 0.9;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        .nav {
+            background: var(--color-surface);
+            border-bottom: 1px solid var(--color-border);
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        .nav-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            gap: 4px;
+            padding: 12px 0;
+        }
+
+        .nav a {
+            flex-shrink: 0;
+            padding: 10px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-muted);
+            text-decoration: none;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .nav a:hover,
+        .nav a:active {
+            background: var(--color-border-light);
+            color: var(--color-text);
+        }
+
+        /* Main Content */
+        .main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 32px 20px 80px;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--color-primary);
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--color-primary);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .section-icon svg {
+            width: 20px;
+            height: 20px;
+            color: white;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--color-primary);
+            letter-spacing: -0.01em;
+        }
+
+        /* File Cards */
+        .files {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .file-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            transition: var(--transition);
+        }
+
+        .file-card:hover {
+            border-color: var(--color-primary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .file-top {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .file-type {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .file-type.pdf {
+            background: #FEE2E2;
+            color: #DC2626;
+        }
+
+        .file-type.xls {
+            background: #D1FAE5;
+            color: #059669;
+        }
+
+        .file-type.img {
+            background: #DBEAFE;
+            color: #2563EB;
+        }
+
+        .file-type.link {
+            background: #F3E8FF;
+            color: #9333EA;
+        }
+
+        .file-type.folder {
+            background: #FEF3C7;
+            color: #D97706;
+        }
+
+        .file-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .file-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+
+        .file-note {
+            font-size: 13px;
+            color: var(--color-text-muted);
+        }
+
+        .file-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            min-height: 48px;
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        .btn-primary {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:active {
+            background: var(--color-primary-light);
+        }
+
+        .btn-secondary {
+            background: var(--color-border-light);
+            color: var(--color-text);
+        }
+
+        .btn-secondary:hover,
+        .btn-secondary:active {
+            background: var(--color-border);
+        }
+
+        /* Special highlight card */
+        .file-card.highlight {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            border-color: transparent;
+            color: white;
+        }
+
+        .file-card.highlight .file-name,
+        .file-card.highlight .file-note {
+            color: white;
+        }
+
+        .file-card.highlight .file-note {
+            opacity: 0.85;
+        }
+
+        .file-card.highlight .file-type {
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+
+        .file-card.highlight .btn-primary {
+            background: white;
+            color: var(--color-primary);
+        }
+
+        .file-card.highlight .btn-secondary {
+            background: rgba(255,255,255,0.15);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        /* Footer CTA */
+        .footer-cta {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 28px 24px;
+            text-align: center;
+            margin-top: 48px;
+        }
+
+        .footer-cta h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--color-text);
+        }
+
+        .footer-cta p {
+            font-size: 14px;
+            color: var(--color-text-muted);
+            margin-bottom: 20px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            min-height: 48px;
+        }
+
+        .contact-btn.whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .contact-btn.whatsapp:hover {
+            background: #1DA851;
+        }
+
+        .contact-btn.telegram {
+            background: #0088cc;
+            color: white;
+        }
+
+        .contact-btn.telegram:hover {
+            background: #006699;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 24px 20px 32px;
+            font-size: 13px;
+            color: var(--color-text-muted);
+        }
+
+        .footer a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        /* VPN Badge */
+        .vpn-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: #FEF3C7;
+            color: #92400E;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-top: 6px;
+        }
+
+        .vpn-badge svg {
+            width: 12px;
+            height: 12px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        .section:nth-child(1) { animation-delay: 0.1s; }
+        .section:nth-child(2) { animation-delay: 0.15s; }
+        .section:nth-child(3) { animation-delay: 0.2s; }
+        .section:nth-child(4) { animation-delay: 0.25s; }
+        .section:nth-child(5) { animation-delay: 0.3s; }
+
+        /* Responsive */
+        @media (min-width: 640px) {
+            .hero {
+                padding: 64px 32px 72px;
+            }
+
+            .main {
+                padding: 48px 32px 100px;
+            }
+
+            .file-card {
+                padding: 20px;
+            }
+
+            .file-actions {
+                flex-direction: row;
+            }
+
+            .btn {
+                flex: none;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="https://kvartirant.plus/upload/resize_cache/webp/citrus.arealty/462/462708e96451e8cf96a8beba37db368c.webp" alt="Kalinka Thailand" class="hero-logo">
+            <div class="hero-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                </svg>
+                Владивосток · 18 декабря 2025
+            </div>
+            <h1>Материалы презентации</h1>
+            <p>Все документы, презентации и файлы — в одном месте</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#presentation">Презентация</a>
+            <a href="#element">The Element</a>
+            <a href="#trees">The Trees</a>
+            <a href="#everprime">Ever Prime</a>
+            <a href="#developer">Застройщик</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Presentation Section -->
+        <section class="section" id="presentation">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/>
+                        <path d="M8 21h8M12 17v4"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Презентация мероприятия</h2>
+            </div>
+            <div class="files">
+                <div class="file-card highlight">
+                    <div class="file-top">
+                        <div class="file-type pdf">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Презентация с выступления Л. Устинова</div>
+                            <div class="file-note">Владивосток, 18 декабря 2025</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://disk.yandex.ru/i/-rNM0u7bSVyh_g" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Element Section -->
+        <section class="section" id="element">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                        <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">The Element by Anocha</h2>
+            </div>
+            <div class="files">
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type pdf">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Презентация проекта</div>
+                            <div class="file-note">Подробное описание проекта</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://disk.yandex.ru/i/5IIy7ty0-r3uIQ" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type xls">XLS</div>
+                        <div class="file-info">
+                            <div class="file-name">Актуальный прайс-лист</div>
+                            <div class="file-note">Цены и доступные юниты</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://docs.google.com/spreadsheets/d/1GmYcWGLpK08k_-doiD58SOj-wzJaqTNKZkX5WRMz5Fo/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type folder">ZIP</div>
+                        <div class="file-info">
+                            <div class="file-name">Мебельный пакет</div>
+                            <div class="file-note">Варианты меблировки</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://disk.yandex.ru/d/REDIHjYn08Q2Ew" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type img">IMG</div>
+                        <div class="file-info">
+                            <div class="file-name">Фото проекта</div>
+                            <div class="file-note">Галерея изображений</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://disk.yandex.ru/d/UnZMikr4gbtLNQ" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type link">WEB</div>
+                        <div class="file-info">
+                            <div class="file-name">База знаний по проекту</div>
+                            <div class="file-note">Подробная информация</div>
+                            <div class="vpn-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                                Нужен VPN
+                            </div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://the-element-by-anocha-m971r43.gamma.site/" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Trees Section -->
+        <section class="section" id="trees">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                        <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">The Trees Residence</h2>
+            </div>
+            <div class="files">
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type pdf">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Презентация проекта</div>
+                            <div class="file-note">Подробное описание проекта</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://disk.yandex.ru/i/McX22PQwfSIwTw" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type xls">XLS</div>
+                        <div class="file-info">
+                            <div class="file-name">Актуальный прайс-лист</div>
+                            <div class="file-note">Цены и доступные юниты</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://docs.google.com/spreadsheets/d/1dhDndg3tGTeLb0UmJDngWJpWNE2bCCGVuNnvZUPoQ9M/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type img">IMG</div>
+                        <div class="file-info">
+                            <div class="file-name">Фото проекта</div>
+                            <div class="file-note">Галерея изображений</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://disk.yandex.ru/d/ahAnKaiT34sMOA" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type link">WEB</div>
+                        <div class="file-info">
+                            <div class="file-name">База знаний по проекту</div>
+                            <div class="file-note">Подробная информация</div>
+                            <div class="vpn-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                                Нужен VPN
+                            </div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://the-trees-residence-lvubkw2.gamma.site/" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ever Prime Section -->
+        <section class="section" id="everprime">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                        <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Ever Prime by Anocha</h2>
+            </div>
+            <div class="files">
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type pdf">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Презентация проекта</div>
+                            <div class="file-note">Подробное описание проекта</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://disk.yandex.ru/i/YXUiNINdzakmYw" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type xls">XLS</div>
+                        <div class="file-info">
+                            <div class="file-name">Актуальный прайс-лист</div>
+                            <div class="file-note">Цены и доступные юниты</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://docs.google.com/spreadsheets/d/1w35KMW3PwGPZzrc5pmVbibzh6NfpEkFKWsS2vBKR-dc/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type folder">ZIP</div>
+                        <div class="file-info">
+                            <div class="file-name">Мебельный пакет</div>
+                            <div class="file-note">Варианты меблировки</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://disk.yandex.ru/d/QuNhazJbqsS8Jg" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type img">IMG</div>
+                        <div class="file-info">
+                            <div class="file-name">Фото проекта</div>
+                            <div class="file-note">Галерея изображений</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://disk.yandex.ru/d/fpfge1TzXDhANQ" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type link">WEB</div>
+                        <div class="file-info">
+                            <div class="file-name">База знаний по проекту</div>
+                            <div class="file-note">Подробная информация</div>
+                            <div class="vpn-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                                Нужен VPN
+                            </div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://ever-prime-residences-ka-9shoo21.gamma.site/" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developer Section -->
+        <section class="section" id="developer">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                        <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">О застройщике</h2>
+            </div>
+            <div class="files">
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type folder">DOC</div>
+                        <div class="file-info">
+                            <div class="file-name">Документы застройщика</div>
+                            <div class="file-note">Лицензии и сертификаты</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://disk.yandex.ru/d/HhNfoeJ551xiTw" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-top">
+                        <div class="file-type link">WEB</div>
+                        <div class="file-info">
+                            <div class="file-name">Завершённые проекты</div>
+                            <div class="file-note">Портфолио застройщика</div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="https://www.phuketplus.co.th/ru/projects/" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                                <polyline points="15,3 21,3 21,9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Открыть
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer CTA -->
+        <div class="footer-cta">
+            <h3>Остались вопросы?</h3>
+            <p>Свяжитесь с нами для консультации</p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/66818924947" class="contact-btn whatsapp" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    WhatsApp
+                </a>
+                <a href="https://t.me/Leo_Ustinov" class="contact-btn telegram" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    Telegram
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 <a href="https://kalinkathailand.com" target="_blank">Kalinka Thailand</a> · Премиальная недвижимость на Пхукете</p>
+    </footer>
+
+</body>
+</html>
